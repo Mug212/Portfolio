@@ -20,27 +20,27 @@ const Hero = () => {
             Full Stack Developer
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            I craft beautiful, functional web applications using modern technologies. 
-            Passionate about creating seamless user experiences and robust backend solutions.
+            I build scalable web applications from frontend to backend using modern technologies. 
+            Specialized in React, Node.js, Python, and cloud infrastructure to deliver end-to-end solutions.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
-              View My Work
+              View My Projects
             </Button>
             <Button variant="outline" className="border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-3 rounded-full transition-all duration-300">
-              Download CV
+              Download Resume
             </Button>
           </div>
 
           <div className="flex justify-center space-x-6 mb-16">
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="https://github.com/alijavaid" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Github size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="https://linkedin.com/in/alijavaid" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Linkedin size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
+            <a href="mailto:ali@example.com" className="text-gray-400 hover:text-blue-400 transition-colors duration-300 transform hover:scale-110">
               <Mail size={24} />
             </a>
           </div>

@@ -6,33 +6,33 @@ const Projects = () => {
   const projects = [
     {
       title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
+      description: "Full-stack e-commerce solution with React frontend, Node.js backend, PostgreSQL database, Stripe payments, and AWS deployment. Features real-time inventory management and admin dashboard.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "AWS", "Docker"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      title: "Real-Time Chat Application",
+      description: "Scalable chat application with Socket.io for real-time messaging, Redis for session management, and JWT authentication. Supports multiple chat rooms and file sharing.",
       image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["React", "TypeScript", "Socket.io", "MongoDB", "Express"],
+      technologies: ["React", "Socket.io", "Node.js", "Redis", "MongoDB", "JWT"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that displays current conditions and forecasts using external APIs with beautiful data visualizations.",
+      title: "Task Management API",
+      description: "RESTful API built with Python FastAPI, PostgreSQL database, and Docker deployment. Features user authentication, role-based permissions, and comprehensive testing suite.",
       image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Tailwind CSS"],
+      technologies: ["Python", "FastAPI", "PostgreSQL", "Docker", "Pytest", "OAuth2"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Social Media Dashboard",
-      description: "A comprehensive social media analytics dashboard with real-time data visualization and user engagement metrics.",
+      title: "Analytics Dashboard",
+      description: "Full-stack analytics platform with React frontend, Python backend, and real-time data visualization. Processes large datasets and provides interactive charts and reports.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "Python", "FastAPI", "PostgreSQL", "Chart.js"],
+      technologies: ["React", "Python", "FastAPI", "PostgreSQL", "Chart.js", "Pandas"],
       liveUrl: "#",
       githubUrl: "#"
     }
@@ -43,11 +43,11 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            My <span className="text-blue-400">Projects</span>
+            Featured <span className="text-blue-400">Projects</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Here are some of my recent projects that showcase my skills in full-stack development
+            A showcase of full-stack applications demonstrating modern web development practices
           </p>
         </div>
 
@@ -96,7 +96,7 @@ const Projects = () => {
                     className="border-gray-500 text-gray-400 hover:bg-gray-500 hover:text-white"
                   >
                     <Github size={16} className="mr-2" />
-                    Code
+                    Source Code
                   </Button>
                 </div>
               </div>

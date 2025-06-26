@@ -1,27 +1,27 @@
 
-import { Code, Database, Globe, Smartphone } from "lucide-react";
+import { Code, Database, Globe, Server } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: Code,
       title: "Frontend Development",
-      description: "Modern React, TypeScript, and responsive design"
+      description: "React, TypeScript, Next.js, and modern UI frameworks"
+    },
+    {
+      icon: Server,
+      title: "Backend Development",
+      description: "Node.js, Python, Express, FastAPI, and RESTful APIs"
     },
     {
       icon: Database,
-      title: "Backend Development",
-      description: "Node.js, Python, and database management"
+      title: "Database Management",
+      description: "PostgreSQL, MongoDB, Redis, and database optimization"
     },
     {
       icon: Globe,
-      title: "Web Technologies",
-      description: "Full-stack web application development"
-    },
-    {
-      icon: Smartphone,
-      title: "Mobile Ready",
-      description: "Progressive web apps and mobile optimization"
+      title: "Cloud & DevOps",
+      description: "AWS, Docker, CI/CD, and scalable infrastructure"
     }
   ];
 
@@ -38,25 +38,29 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with expertise in modern web technologies. 
-              I love turning complex problems into simple, beautiful, and intuitive solutions.
+              I'm a passionate full-stack developer with 3+ years of experience building 
+              robust web applications. I excel at creating seamless user experiences while 
+              architecting scalable backend systems that can handle millions of users.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              With experience in both frontend and backend development, I create comprehensive 
-              web applications that deliver exceptional user experiences while maintaining 
-              robust, scalable backend architectures.
+              My expertise spans the entire development lifecycle - from crafting responsive 
+              frontends with React and TypeScript to building high-performance APIs with 
+              Node.js and Python. I'm passionate about clean code, testing, and delivering 
+              products that solve real-world problems.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              When I'm not coding, you can find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge with the developer community.
+              I love staying up-to-date with the latest technologies and best practices. 
+              When I'm not coding, you'll find me contributing to open source projects, 
+              writing technical blogs, or mentoring aspiring developers.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-6">
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">JavaScript</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Full Stack</span>
               <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">React</span>
               <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Node.js</span>
               <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">TypeScript</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">AWS</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Docker</span>
             </div>
           </div>
 
