@@ -1,37 +1,42 @@
 
+import { Code, Shield, Brain, Globe, Github, Database } from "lucide-react";
+
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Frontend",
+      title: "Programming & Development",
+      icon: Code,
       skills: [
-        { name: "React", level: 95 },
-        { name: "TypeScript", level: 90 },
-        { name: "Next.js", level: 88 },
-        { name: "JavaScript", level: 95 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Redux", level: 85 }
+        { name: "Python Programming", level: 90 },
+        { name: "HTML5", level: 85 },
+        { name: "CSS3", level: 85 },
+        { name: "JavaScript", level: 75 },
+        { name: "GitHub", level: 80 },
+        { name: "Front End Development", level: 82 }
       ]
     },
     {
-      title: "Backend",
+      title: "Security & AI",
+      icon: Shield,
       skills: [
-        { name: "Node.js", level: 90 },
-        { name: "Python", level: 88 },
-        { name: "Express.js", level: 92 },
-        { name: "FastAPI", level: 85 },
-        { name: "RESTful APIs", level: 90 },
-        { name: "GraphQL", level: 78 }
+        { name: "Introduction to Cyber Security", level: 85 },
+        { name: "Ethical Hacking", level: 80 },
+        { name: "Generative AI", level: 75 },
+        { name: "Machine Learning", level: 70 },
+        { name: "Security Analysis", level: 78 },
+        { name: "AI Security", level: 72 }
       ]
     },
     {
-      title: "Database & Cloud",
+      title: "Soft Skills",
+      icon: Brain,
       skills: [
-        { name: "PostgreSQL", level: 88 },
-        { name: "MongoDB", level: 85 },
-        { name: "Redis", level: 80 },
-        { name: "AWS", level: 82 },
-        { name: "Docker", level: 85 },
-        { name: "Git", level: 95 }
+        { name: "Team Player", level: 95 },
+        { name: "Quick Learner", level: 98 },
+        { name: "Self Motivated", level: 92 },
+        { name: "Work Under Pressure", level: 88 },
+        { name: "Self Confidence", level: 90 },
+        { name: "Positive Attitude", level: 95 }
       ]
     }
   ];
@@ -39,13 +44,13 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 bg-slate-800/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Technical <span className="text-blue-400">Skills</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-600 mx-auto mb-6"></div>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Proficient in modern technologies across the full development stack
+            Comprehensive skill set across programming, cybersecurity, and professional development
           </p>
         </div>
 
@@ -53,11 +58,15 @@ const Skills = () => {
           {skillCategories.map((category, categoryIndex) => (
             <div 
               key={categoryIndex}
-              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg border border-slate-700/50"
+              className="bg-slate-800/50 backdrop-blur-sm p-6 rounded-lg border border-slate-700/50 opacity-0 animate-fade-in transform hover:scale-105 transition-all duration-300"
+              style={{ animationDelay: `${0.4 + categoryIndex * 0.2}s`, animationFillMode: 'forwards' }}
             >
-              <h3 className="text-xl font-semibold text-white mb-6 text-center">
-                {category.title}
-              </h3>
+              <div className="flex items-center justify-center mb-6">
+                <category.icon className="text-blue-400 mr-3" size={24} />
+                <h3 className="text-xl font-semibold text-white text-center">
+                  {category.title}
+                </h3>
+              </div>
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skillIndex}>
@@ -68,7 +77,10 @@ const Skills = () => {
                     <div className="w-full bg-slate-700 rounded-full h-2">
                       <div 
                         className="bg-gradient-to-r from-blue-400 to-purple-600 h-2 rounded-full transition-all duration-1000 ease-out"
-                        style={{ width: `${skill.level}%` }}
+                        style={{ 
+                          width: `${skill.level}%`,
+                          animationDelay: `${1 + skillIndex * 0.1}s`
+                        }}
                       ></div>
                     </div>
                   </div>

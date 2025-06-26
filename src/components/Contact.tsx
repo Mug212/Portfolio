@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-slate-800/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Get In <span className="text-blue-400">Touch</span>
           </h2>
@@ -19,12 +19,13 @@ const Contact = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-8">
+          <div className="space-y-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <div>
               <h3 className="text-2xl font-semibold text-white mb-6">Let's work together</h3>
               <p className="text-gray-400 leading-relaxed mb-8">
-                Whether you're looking for a full-stack developer to join your team or need help 
-                bringing your project to life, I'd love to hear from you. Let's create something amazing together!
+                As a fresh Computer Science graduate, I'm eager to contribute to meaningful projects 
+                and grow professionally. Whether you're looking for a dedicated developer or need help 
+                with cybersecurity solutions, I'd love to hear from you!
               </p>
             </div>
 
@@ -35,7 +36,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-medium">Email</h4>
-                  <p className="text-gray-400">ali.javaid@example.com</p>
+                  <p className="text-gray-400">my953547@gmail.com</p>
                 </div>
               </div>
 
@@ -45,7 +46,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-medium">Phone</h4>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-400">+91 9682316060</p>
                 </div>
               </div>
 
@@ -55,13 +56,13 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-medium">Location</h4>
-                  <p className="text-gray-400">Available for remote work</p>
+                  <p className="text-gray-400">Binner Baramulla, Jammu and Kashmir</p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-lg border border-slate-700/50">
+          <div className="bg-slate-800/50 backdrop-blur-sm p-8 rounded-lg border border-slate-700/50 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
@@ -110,7 +111,7 @@ const Contact = () => {
 
         <div className="text-center mt-16 pt-8 border-t border-slate-700/50">
           <p className="text-gray-400">
-            © 2024 Ali Javaid. All rights reserved.
+            © 2024 Mohammad Umair Ganie. All rights reserved.
           </p>
         </div>
       </div>
