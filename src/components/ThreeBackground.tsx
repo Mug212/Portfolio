@@ -1,7 +1,6 @@
 
-import { useRef, useEffect } from 'react';
+import { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { Sphere, Box, Torus } from '@react-three/drei';
 import * as THREE from 'three';
 
 const FloatingGeometry = ({ position, geometry }: { position: [number, number, number], geometry: 'sphere' | 'box' | 'torus' }) => {
@@ -18,13 +17,13 @@ const FloatingGeometry = ({ position, geometry }: { position: [number, number, n
   const renderGeometry = () => {
     switch (geometry) {
       case 'sphere':
-        return <Sphere args={[0.5, 32, 32]} />;
+        return <sphereGeometry args={[0.5, 32, 32]} />;
       case 'box':
-        return <Box args={[0.8, 0.8, 0.8]} />;
+        return <boxGeometry args={[0.8, 0.8, 0.8]} />;
       case 'torus':
-        return <Torus args={[0.6, 0.2, 16, 100]} />;
+        return <torusGeometry args={[0.6, 0.2, 16, 100]} />;
       default:
-        return <Sphere args={[0.5, 32, 32]} />;
+        return <sphereGeometry args={[0.5, 32, 32]} />;
     }
   };
 
