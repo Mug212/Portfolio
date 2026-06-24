@@ -1,27 +1,27 @@
 
-import { Code, Database, Globe, Shield } from "lucide-react";
+import { Code, Database, Globe, Server } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Programming & Development",
-      description: "Python, HTML5, CSS3, JavaScript, and GitHub"
+      title: "Frontend Development",
+      description: "React.js, Next.js, JavaScript, HTML5, CSS3, Tailwind CSS"
     },
     {
-      icon: Shield,
-      title: "Cybersecurity",
-      description: "Ethical Hacking, Security Analysis, and AI Security"
+      icon: Server,
+      title: "Backend Development",
+      description: "Node.js, Express.js, REST APIs, Python, Gemini API"
     },
     {
       icon: Database,
-      title: "Machine Learning",
-      description: "Introduction to ML, Generative AI, and Data Science"
+      title: "Databases & Data",
+      description: "MongoDB, SQL, MySQL, Power BI, DBMS fundamentals"
     },
     {
       icon: Globe,
-      title: "Web Development",
-      description: "Front-end development, responsive design, and modern frameworks"
+      title: "Tools & Practices",
+      description: "Git, GitHub, OOP, Computer Networks, Software Engineering"
     }
   ];
 
@@ -38,28 +38,29 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm Mohammad Umair Ganie, a passionate Computer Science graduate from Mewar University 
-              with a strong foundation in programming and cybersecurity. Currently pursuing my B.Tech 
-              with a CGPA of 7.26, I'm dedicated to building secure and innovative digital solutions.
+              I'm Mohammad Umair Ganie, a Full Stack Developer and Computer Science Engineering student
+              at Mewar University (B.Tech, CGPA 7.5). I build responsive web applications, RESTful systems,
+              and data-driven solutions end-to-end.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              My expertise spans from Python programming and web development to ethical hacking and 
-              generative AI. I believe in continuous learning and staying updated with the latest 
-              technological advancements to create impactful applications.
+              During my Full Stack Developer internship at NIT Srinagar, I cut page load times by 35%
+              with React lazy loading, code-splitting, and MongoDB/SQL indexing, and improved user
+              retention by 15% with a seamless React/Next.js UI backed by Redux state management.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              As a quick learner with strong problem-solving skills, I'm always excited to take on 
-              new challenges and contribute to meaningful projects. My goal is to work in a 
-              professional environment where I can apply my knowledge while growing personally and professionally.
+              I enjoy turning ideas into production-ready products — from AI-powered SEO dashboards
+              built on the Gemini API to full-stack e-commerce platforms on the MERN stack.
             </p>
             
             <div className="flex flex-wrap gap-4 pt-6">
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">React.js</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Node.js</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Express.js</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">MongoDB</span>
               <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Python</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Web Development</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Cybersecurity</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Ethical Hacking</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Generative AI</span>
-              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Machine Learning</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">SQL</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Tailwind CSS</span>
+              <span className="px-4 py-2 bg-blue-600/20 text-blue-400 rounded-full text-sm">Power BI</span>
             </div>
           </div>
 

@@ -1,42 +1,42 @@
 
-import { Code, Shield, Brain, Globe, Github, Database } from "lucide-react";
+import { Code, Server, Database, Brain } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Programming & Development",
+      title: "Frontend",
       icon: Code,
       skills: [
-        { name: "Python Programming", level: 90 },
-        { name: "HTML5", level: 85 },
-        { name: "CSS3", level: 85 },
-        { name: "JavaScript", level: 75 },
-        { name: "GitHub", level: 80 },
-        { name: "Front End Development", level: 82 }
+        { name: "React.js", level: 88 },
+        { name: "JavaScript", level: 85 },
+        { name: "HTML5", level: 92 },
+        { name: "CSS3", level: 90 },
+        { name: "Tailwind CSS", level: 88 },
+        { name: "Next.js", level: 80 }
       ]
     },
     {
-      title: "Security & AI",
-      icon: Shield,
+      title: "Backend & Data",
+      icon: Server,
       skills: [
-        { name: "Introduction to Cyber Security", level: 85 },
-        { name: "Ethical Hacking", level: 80 },
-        { name: "Generative AI", level: 75 },
-        { name: "Machine Learning", level: 70 },
-        { name: "Security Analysis", level: 78 },
-        { name: "AI Security", level: 72 }
+        { name: "Node.js", level: 82 },
+        { name: "Express.js", level: 80 },
+        { name: "Python", level: 88 },
+        { name: "MongoDB", level: 82 },
+        { name: "SQL / MySQL", level: 85 },
+        { name: "Gemini API", level: 78 }
       ]
     },
     {
-      title: "Soft Skills",
-      icon: Brain,
+      title: "Tools & Foundations",
+      icon: Database,
       skills: [
-        { name: "Team Player", level: 95 },
-        { name: "Quick Learner", level: 98 },
-        { name: "Self Motivated", level: 92 },
-        { name: "Work Under Pressure", level: 88 },
-        { name: "Self Confidence", level: 90 },
-        { name: "Positive Attitude", level: 95 }
+        { name: "Git & GitHub", level: 90 },
+        { name: "Power BI", level: 78 },
+        { name: "Excel", level: 80 },
+        { name: "OOP", level: 85 },
+        { name: "DBMS", level: 85 },
+        { name: "Computer Networks", level: 78 }
       ]
     }
   ];

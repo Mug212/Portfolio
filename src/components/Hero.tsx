@@ -1,54 +1,18 @@
 
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "./ui/button";
+import resumePdf from "@/assets/Mohammad_Umair_Ganie_Resume.pdf.asset.json";
 
 const Hero = () => {
   const downloadResume = () => {
-    // Create a simple PDF-like content for now
-    const resumeContent = `
-MOHAMMAD UMAIR GANIE
-Full Stack Developer
-
-Contact:
-Phone: +91 9682316060
-Email: my953547@gmail.com
-Location: Binner Baramulla Jammu and Kashmir
-
-Education:
-B.Tech, Computer Science & Engineering
-Mewar University Chittorgarh Rajasthan
-2025 | CGPA: 7.26/10
-
-Skills:
-- Python Programming
-- Front End Development  
-- HTML5, CSS3
-- GitHub
-- Cyber Security
-- Ethical Hacking
-- Generative AI
-
-Projects:
-- Mewar University Result Management System
-- Calculator Application
-- Web Development Course
-
-Certifications:
-- Certified in Python Programming
-- Introduction to Front-End Development
-- Career Essentials in Generative AI by Microsoft and LinkedIn
-- Introduction to Machine Learning
-    `;
-    
-    const blob = new Blob([resumeContent], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
-    a.href = url;
-    a.download = 'Mohammad_Umair_Ganie_Resume.txt';
+    a.href = resumePdf.url;
+    a.download = 'Mohammad_Umair_Ganie_Resume.pdf';
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    URL.revokeObjectURL(url);
   };
 
   return (
@@ -65,11 +29,12 @@ Certifications:
             Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">Mohammad Umair Ganie</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
-            Full Stack Developer & Cyber Security Enthusiast
+            Full Stack Developer
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-            Fresh Computer Science graduate specializing in Python programming, web development, and cybersecurity. 
-            Passionate about building secure, scalable applications and exploring the latest in AI and ethical hacking.
+            Computer Science Engineering student with hands-on experience building responsive web
+            applications, RESTful systems, and data-driven solutions. Proficient in Python, JavaScript,
+            React.js, Node.js, Express.js, SQL, and MongoDB.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">

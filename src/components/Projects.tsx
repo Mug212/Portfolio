@@ -5,35 +5,35 @@ import { Button } from "./ui/button";
 const Projects = () => {
   const projects = [
     {
-      title: "Mewar University Result Management System",
-      description: "A comprehensive web application for managing university results. Built with modern web technologies to provide an efficient and user-friendly interface for students and administrators to access and manage academic results.",
-      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&h=300&fit=crop",
-      technologies: ["Python", "Web Development", "Database Management", "HTML5", "CSS3"],
-      liveUrl: "http://65.108.229.11:5000/",
-      githubUrl: "#"
-    },
-    {
-      title: "Calculator Application",
-      description: "A functional calculator application demonstrating programming fundamentals and user interface design. Features basic arithmetic operations with a clean and intuitive interface.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Python", "GUI Programming", "Algorithm Design", "User Interface"],
-      liveUrl: "#",
-      githubUrl: "#"
-    },
-    {
-      title: "Web Development Course Project",
-      description: "A comprehensive project showcasing modern web development techniques and best practices. Demonstrates proficiency in front-end technologies and responsive design principles.",
+      title: "AI SEO Dashboard",
+      description: "A full-stack AI marketing companion built with Next.js, React, and Tailwind CSS. Integrates the Google Gemini API to dynamically generate structured SEO metadata and targeted promotional copy from user inputs, with optimized API routes, client-side validation, and structured JSON parsing for clean UI rendering.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design", "GitHub"],
+      technologies: ["Next.js", "React", "Tailwind CSS", "Gemini API", "Node.js"],
       liveUrl: "#",
       githubUrl: "#"
     },
     {
-      title: "Cybersecurity Research Project",
-      description: "Research and practical implementation of ethical hacking techniques and cybersecurity measures. Focuses on identifying vulnerabilities and implementing security solutions.",
-      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=500&h=300&fit=crop",
-      technologies: ["Ethical Hacking", "Cybersecurity", "Python", "Security Analysis", "Penetration Testing"],
+      title: "Luxury Fragrance E-Commerce Platform",
+      description: "Full-stack MERN e-commerce platform with a seamless, dynamic UX. Implemented global state management for real-time cart updates and persistent user sessions, with secure REST APIs and a responsive product catalog.",
+      image: "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=300&fit=crop",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
       liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Student Performance Analysis System",
+      description: "End-to-end analytics solution using SQL and Power BI. Built advanced SQL queries for data extraction and cleaning, paired with Power BI DAX formulas to surface real-time performance percentages and grade distributions.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      technologies: ["SQL", "Power BI", "DAX", "Data Analytics", "Excel"],
+      liveUrl: "#",
+      githubUrl: "#"
+    },
+    {
+      title: "Mewar University Result Management System",
+      description: "A responsive web application for managing university results, providing an efficient interface for students and administrators to access and manage academic records.",
+      image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=500&h=300&fit=crop",
+      technologies: ["Python", "HTML5", "CSS3", "SQL", "Web Development"],
+      liveUrl: "http://65.108.229.11:5000/",
       githubUrl: "#"
     }
   ];
